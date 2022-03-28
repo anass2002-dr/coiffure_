@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{304B37D4-F13D-44BC-8A35-7E341B9FAECF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Coiffure</RootNamespace>
+    <AssemblyName>Coiffure</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aide.Designer.cs">
+      <DependentUpon>aide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appsetting.cs" />
+    <Compile Include="conecter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conecter.Designer.cs">
+      <DependentUpon>conecter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gere_les_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gere_les_client.Designer.cs">
+      <DependentUpon>Gere_les_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inscrire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inscrire.Designer.cs">
+      <DependentUpon>inscrire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mylib.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reserver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reserver.Designer.cs">
+      <DependentUpon>Reserver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>salonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Serveur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serveur.Designer.cs">
+      <DependentUpon>Serveur.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accueil.en.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aide.aa-DJ.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aide.aa.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aide.en.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aide.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conecter.en.resx">
+      <DependentUpon>conecter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conecter.resx">
+      <DependentUpon>conecter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.en.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gere_les_client.resx">
+      <DependentUpon>Gere_les_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscrire.en.resx">
+      <DependentUpon>inscrire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscrire.resx">
+      <DependentUpon>inscrire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reserver.en.resx">
+      <DependentUpon>Reserver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reserver.resx">
+      <DependentUpon>Reserver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serveur.en-ZA.resx">
+      <DependentUpon>Serveur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serveur.en.resx">
+      <DependentUpon>Serveur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serveur.resx">
+      <DependentUpon>Serveur.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="salonDataSet.xsc">
+      <DependentUpon>salonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="salonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>salonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="salonDataSet.xss">
+      <DependentUpon>salonDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_arrow_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_arrow_32px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secure_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-1319459.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-cottonbro-3998390.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-josh-sorenson-995300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-mathias-pr-reding-11213201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-1319458.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-1319460.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-13194601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_arrow_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-1319462.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-13194602.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_button_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_24px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertisement_page_24px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_24px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserve_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_+_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tune_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbershop_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-cottonbro-3992870.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real_estate_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invert_colors_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-caleb-oquendo-3162022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-josh-sorenson-9953001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-13194621.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barber_chair_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay_date_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_clip_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barber_scissors_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expensive_price_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserve_24px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_more_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_24px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-panumas-nikhomkhai-1148820 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-panumas-nikhomkhai-1148820 %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-mathias-pr-reding-112132011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-panumas-nikhomkhai-1148820 %281%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-panumas-nikhomkhai-1148820 %281%293.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

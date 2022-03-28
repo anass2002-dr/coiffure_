@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;lb_style.Name" xml:space="preserve">
+    <value>lb_style</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_salon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cb_type_style.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lb_prix_total.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="&gt;&gt;cb_salon.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label5.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lb_nom_coiffeur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 17</value>
+  </data>
+  <data name="&gt;&gt;lb_prix_total.Name" xml:space="preserve">
+    <value>lb_prix_total</value>
+  </data>
+  <data name="lb_nom_client.Text" xml:space="preserve">
+    <value>Nom de client :</value>
+  </data>
+  <data name="&gt;&gt;panel_body.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lb_style.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 111</value>
+  </data>
+  <data name="txt_nom_salon.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_salon.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="txt_nom_client.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lb_nom_coiffeur.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Malgun Gothic, 9.75pt</value>
+  </data>
+  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 35</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_rechercher.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="panel_inside.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 275</value>
+  </data>
+  <data name="dateTimePicker1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_temps.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cb_type_style.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;btn_reserver.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="lb_style.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Name" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="txt_nom_style_panel_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 227</value>
+  </data>
+  <data name="&gt;&gt;lb_temps_header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txt_nom_coiffeur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 20</value>
+  </data>
+  <data name="lb_ville.Text" xml:space="preserve">
+    <value>Ville :</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_rechercher.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_prix_panel_right.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btn_reserver.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_date_header.Text" xml:space="preserve">
+    <value>La date :</value>
+  </data>
+  <data name="panel_header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lb_salon_header.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lb_nom_client.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_rechercher.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_coiffeur.Name" xml:space="preserve">
+    <value>txt_nom_coiffeur</value>
+  </data>
+  <data name="&gt;&gt;cb_ville.Name" xml:space="preserve">
+    <value>cb_ville</value>
+  </data>
+  <data name="lb_style.Text" xml:space="preserve">
+    <value>Nom de style :</value>
+  </data>
+  <data name="&gt;&gt;cb_temps.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 100</value>
+  </data>
+  <data name="lb_date_header.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lb_nom_coiffeur.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_temps.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_salon_header.Text" xml:space="preserve">
+    <value>Salon de coiffure :</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_panel_right.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lb_style.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_ville.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="lb_temps_header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 61</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 64</value>
+  </data>
+  <data name="&gt;&gt;txt_temps.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;btn_reserver.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_rechercher.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_temps.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Malgun Gothic, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_panel_right.Name" xml:space="preserve">
+    <value>txt_prix_panel_right</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_temps.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_coiffeur.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_nom_client.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 75</value>
+  </data>
+  <data name="&gt;&gt;cb_temps.Name" xml:space="preserve">
+    <value>cb_temps</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_salon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_date_header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 33</value>
+  </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;lb_salon_header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_temps.Name" xml:space="preserve">
+    <value>txt_temps</value>
+  </data>
+  <data name="&gt;&gt;cb_salon.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="lb_salon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 0</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_client.Name" xml:space="preserve">
+    <value>txt_nom_client</value>
+  </data>
+  <data name="lb_date_header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 25</value>
+  </data>
+  <data name="lb_temps_header.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lb_date_header.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_client.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_total.Name" xml:space="preserve">
+    <value>txt_prix_total</value>
+  </data>
+  <data name="panel_body.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 100</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>716, 429</value>
+  </data>
+  <data name="txt_nom_client.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cb_salon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_temps_header.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lb_salon_header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 29</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 32</value>
+  </data>
+  <data name="&gt;&gt;panel_body.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 219</value>
+  </data>
+  <data name="lb_ville.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 30</value>
+  </data>
+  <data name="panel_inside.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="cb_temps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 63</value>
+  </data>
+  <data name="cb_temps.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_reserver.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="txt_prix_total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 175</value>
+  </data>
+  <data name="panel_header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btn_rechercher.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 23</value>
+  </data>
+  <data name="&gt;&gt;lb_date_header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_salon.Name" xml:space="preserve">
+    <value>txt_nom_salon</value>
+  </data>
+  <data name="&gt;&gt;lb_salon.Name" xml:space="preserve">
+    <value>lb_salon</value>
+  </data>
+  <data name="&gt;&gt;lb_ville.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btn_reserver.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 23</value>
+  </data>
+  <data name="label7.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lb_temps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 143</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bell MT, 9.75pt</value>
+  </data>
+  <data name="lb_date_header.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lb_salon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_date_header.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="lb_nom_client.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Malgun Gothic, 9.75pt</value>
+  </data>
+  <data name="lb_ville.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txt_prix_total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 20</value>
+  </data>
+  <data name="txt_nom_coiffeur.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;lb_prix_total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_coiffeur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_salon_header.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei, 9pt</value>
+  </data>
+  <data name="lb_ville.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel_body.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;panel_right.Name" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="lb_ville.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei, 9pt</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 263</value>
+  </data>
+  <data name="lb_salon_header.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;cb_type_style.Name" xml:space="preserve">
+    <value>cb_type_style</value>
+  </data>
+  <data name="txt_prix_total.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_total.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_temps.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bell MT, 9.75pt</value>
+  </data>
+  <data name="lb_style.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="&gt;&gt;lb_temps.Name" xml:space="preserve">
+    <value>lb_temps</value>
+  </data>
+  <data name="lb_prix_total.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 152</value>
+  </data>
+  <data name="lb_temps.Text" xml:space="preserve">
+    <value>Le temps :</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_client.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel_right.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_coiffeur.Name" xml:space="preserve">
+    <value>lb_nom_coiffeur</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="txt_prix_panel_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 272</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cb_type_style.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;txt_temps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_nom_salon.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lb_temps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btn_rechercher.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lb_temps_header.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 2</value>
+  </data>
+  <data name="cb_type_style.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 21</value>
+  </data>
+  <data name="&gt;&gt;panel_header.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_style_panel_right.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btn_reserver.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lb_temps_header.Text" xml:space="preserve">
+    <value>temps :</value>
+  </data>
+  <data name="lb_nom_client.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_prix_total.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Malgun Gothic, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;lb_date_header.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel_body.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txt_nom_salon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 15</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_client.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="cb_salon.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_rechercher.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="cb_salon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="&gt;&gt;panel_body.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
+    <value>dateTimePicker1</value>
+  </data>
+  <data name="&gt;&gt;lb_temps.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_coiffeur.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_client.Name" xml:space="preserve">
+    <value>lb_nom_client</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lb_style.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_salon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Malgun Gothic, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lb_prix_total.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_prix_total.Text" xml:space="preserve">
+    <value>Le prix total :</value>
+  </data>
+  <data name="lb_salon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 15</value>
+  </data>
+  <data name="btn_reserver.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_total.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_style_panel_right.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_style.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cb_type_style.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 37</value>
+  </data>
+  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lb_prix_total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 175</value>
+  </data>
+  <data name="panel_inside.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 37</value>
+  </data>
+  <data name="&gt;&gt;cb_type_style.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_temps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="&gt;&gt;lb_salon_header.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_style.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lb_salon_header.Name" xml:space="preserve">
+    <value>lb_salon_header</value>
+  </data>
+  <data name="lb_temps_header.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lb_nom_coiffeur.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_temps_header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="txt_nom_coiffeur.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_coiffeur.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="panel_header.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lb_temps.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="lb_temps_header.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei, 9pt</value>
+  </data>
+  <data name="lb_prix_total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="&gt;&gt;cb_ville.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lb_nom_coiffeur.Text" xml:space="preserve">
+    <value>Nom de coiffeur :</value>
+  </data>
+  <data name="&gt;&gt;lb_salon.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="txt_nom_salon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 20</value>
+  </data>
+  <data name="&gt;&gt;cb_type_style.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_coiffeur.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="&gt;&gt;lb_ville.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;cb_ville.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_temps_header.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_nom_client.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 79</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Reserver</value>
+  </data>
+  <data name="btn_reserver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 226</value>
+  </data>
+  <data name="&gt;&gt;lb_temps_header.Name" xml:space="preserve">
+    <value>lb_temps_header</value>
+  </data>
+  <data name="&gt;&gt;btn_rechercher.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="txt_style.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txt_style.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;panel_inside.Name" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="lb_salon.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txt_prix_panel_right.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_ville.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 25</value>
+  </data>
+  <data name="btn_reserver.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;lb_ville.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="cb_salon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel_right.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;lb_ville.Name" xml:space="preserve">
+    <value>lb_ville</value>
+  </data>
+  <data name="txt_nom_client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 20</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_panel_right.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;lb_salon_header.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="&gt;&gt;cb_temps.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="txt_prix_total.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="txt_style.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lb_style.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="txt_nom_style_panel_right.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="cb_salon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 21</value>
+  </data>
+  <data name="txt_nom_style_panel_right.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="&gt;&gt;lb_salon.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_client.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Nom de style :</value>
+  </data>
+  <data name="btn_rechercher.Text" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="&gt;&gt;panel_inside.Parent" xml:space="preserve">
+    <value>panel_body</value>
+  </data>
+  <data name="&gt;&gt;panel_right.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_nom_coiffeur.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txt_style.Name" xml:space="preserve">
+    <value>txt_style</value>
+  </data>
+  <data name="panel_body.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 329</value>
+  </data>
+  <data name="lb_style.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Malgun Gothic, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;cb_ville.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel_body.Name" xml:space="preserve">
+    <value>panel_body</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="lb_date_header.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="cb_ville.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_style_panel_right.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;cb_salon.Name" xml:space="preserve">
+    <value>cb_salon</value>
+  </data>
+  <data name="lb_date_header.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei, 9pt</value>
+  </data>
+  <data name="lb_salon_header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 29</value>
+  </data>
+  <data name="lb_salon_header.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Reserver</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>type de style :</value>
+  </data>
+  <data name="lb_prix_total.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cb_ville.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 21</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Le prix de style :</value>
+  </data>
+  <data name="lb_salon.Text" xml:space="preserve">
+    <value>Nom de salon :</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_client.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_nom_coiffeur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 45</value>
+  </data>
+  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_coiffeur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_style.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 20</value>
+  </data>
+  <data name="txt_prix_panel_right.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="txt_nom_style_panel_right.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;txt_style.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="lb_temps.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;panel_inside.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_reserver.Text" xml:space="preserve">
+    <value>Reserver</value>
+  </data>
+  <data name="lb_temps.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="txt_temps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 20</value>
+  </data>
+  <data name="cb_temps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 21</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel_right.Parent" xml:space="preserve">
+    <value>panel_body</value>
+  </data>
+  <data name="&gt;&gt;lb_date_header.Name" xml:space="preserve">
+    <value>lb_date_header</value>
+  </data>
+  <data name="&gt;&gt;panel_inside.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_nom_style_panel_right.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lb_nom_coiffeur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 47</value>
+  </data>
+  <data name="&gt;&gt;txt_style.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 35</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 36</value>
+  </data>
+  <data name="lb_nom_client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="&gt;&gt;panel_right.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_salon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 17</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_rechercher.Name" xml:space="preserve">
+    <value>btn_rechercher</value>
+  </data>
+  <data name="panel_body.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_rechercher.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 61</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="txt_nom_salon.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_nom_style_panel_right.Name" xml:space="preserve">
+    <value>txt_nom_style_panel_right</value>
+  </data>
+  <data name="txt_nom_client.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txt_prix_panel_right.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cb_ville.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 30</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_style.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 105</value>
+  </data>
+  <data name="panel_right.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 329</value>
+  </data>
+  <data name="panel_inside.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="txt_temps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 140</value>
+  </data>
+  <data name="txt_prix_panel_right.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;btn_reserver.Name" xml:space="preserve">
+    <value>btn_reserver</value>
+  </data>
+  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 20</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bell MT, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lb_nom_client.Parent" xml:space="preserve">
+    <value>panel_inside</value>
+  </data>
+  <data name="&gt;&gt;cb_temps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_prix_total.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_salon_header.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
