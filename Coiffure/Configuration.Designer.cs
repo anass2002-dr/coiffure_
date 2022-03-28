@@ -33,10 +33,12 @@ namespace Coiffure
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.combo_langue = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.combo_mode = new System.Windows.Forms.ComboBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_prenom = new System.Windows.Forms.TextBox();
@@ -49,10 +51,8 @@ namespace Coiffure
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_ville = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_nom = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.lb_password = new System.Windows.Forms.Label();
+            this.txt_nom = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,39 +83,27 @@ namespace Coiffure
             resources.ApplyResources(this.panel7, "panel7");
             this.panel7.BackColor = System.Drawing.Color.Gray;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.comboBox2);
-            this.panel7.Controls.Add(this.comboBox1);
+            this.panel7.Controls.Add(this.combo_langue);
             this.panel7.Controls.Add(this.panel9);
+            this.panel7.Controls.Add(this.combo_mode);
             this.panel7.Controls.Add(this.panel11);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Name = "panel7";
             // 
-            // comboBox2
+            // combo_langue
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1")});
-            this.comboBox2.Name = "comboBox2";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.combo_langue.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.combo_langue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.combo_langue, "combo_langue");
+            this.combo_langue.ForeColor = System.Drawing.Color.Gray;
+            this.combo_langue.FormattingEnabled = true;
+            this.combo_langue.Items.AddRange(new object[] {
+            resources.GetString("combo_langue.Items"),
+            resources.GetString("combo_langue.Items1"),
+            resources.GetString("combo_langue.Items2")});
+            this.combo_langue.Name = "combo_langue";
+            this.combo_langue.SelectedIndexChanged += new System.EventHandler(this.combo_langue_SelectedIndexChanged);
             // 
             // panel9
             // 
@@ -123,11 +111,35 @@ namespace Coiffure
             resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
             // 
+            // combo_mode
+            // 
+            this.combo_mode.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.combo_mode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.combo_mode, "combo_mode");
+            this.combo_mode.ForeColor = System.Drawing.Color.Gray;
+            this.combo_mode.FormattingEnabled = true;
+            this.combo_mode.Items.AddRange(new object[] {
+            resources.GetString("combo_mode.Items"),
+            resources.GetString("combo_mode.Items1")});
+            this.combo_mode.Name = "combo_mode";
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
+            // 
+            // label7
+            // 
+            this.label7.Image = global::Coiffure.Properties.Resources.invert_colors_24px;
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            this.label8.Image = global::Coiffure.Properties.Resources.language_24px;
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
             // 
             // label1
             // 
@@ -220,6 +232,7 @@ namespace Coiffure
             resources.ApplyResources(this.txt_ville, "txt_ville");
             this.txt_ville.ForeColor = System.Drawing.Color.Gray;
             this.txt_ville.Name = "txt_ville";
+            this.txt_ville.TextChanged += new System.EventHandler(this.txt_ville_TextChanged);
             // 
             // txt_email
             // 
@@ -228,30 +241,18 @@ namespace Coiffure
             this.txt_email.ForeColor = System.Drawing.Color.Gray;
             this.txt_email.Name = "txt_email";
             // 
+            // lb_password
+            // 
+            this.lb_password.Image = global::Coiffure.Properties.Resources.password_24px;
+            resources.ApplyResources(this.lb_password, "lb_password");
+            this.lb_password.Name = "lb_password";
+            // 
             // txt_nom
             // 
             this.txt_nom.BackColor = System.Drawing.SystemColors.MenuBar;
             resources.ApplyResources(this.txt_nom, "txt_nom");
             this.txt_nom.ForeColor = System.Drawing.Color.Gray;
             this.txt_nom.Name = "txt_nom";
-            // 
-            // label7
-            // 
-            this.label7.Image = global::Coiffure.Properties.Resources.invert_colors_24px;
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            this.label8.Image = global::Coiffure.Properties.Resources.language_24px;
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // lb_password
-            // 
-            this.lb_password.Image = global::Coiffure.Properties.Resources.password_24px;
-            resources.ApplyResources(this.lb_password, "lb_password");
-            this.lb_password.Name = "lb_password";
             // 
             // label6
             // 
@@ -276,7 +277,6 @@ namespace Coiffure
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Configuration";
             this.Load += new System.EventHandler(this.Configuration_Load);
             this.panel1.ResumeLayout(false);
@@ -293,8 +293,8 @@ namespace Coiffure
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox combo_mode;
+        private System.Windows.Forms.ComboBox combo_langue;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label7;

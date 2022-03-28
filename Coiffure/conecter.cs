@@ -215,5 +215,10 @@ namespace Coiffure
         {
             
         }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

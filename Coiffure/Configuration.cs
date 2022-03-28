@@ -9,12 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
+using MaterialSkin;
+using MaterialSkin.Controls;
 namespace Coiffure
 {
     public partial class Configuration : Form
     {
+       MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
+        //Random r = new Random();
         public Configuration()
         {
+           
             InitializeComponent();
         }
         bool modefier = false;
@@ -22,6 +27,14 @@ namespace Coiffure
         SqlConnection cn;
         private void Configuration_Load(object sender, EventArgs e)
         {
+            //materialSkinManager.AddFormToManage(this);
+            //materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+
+            //// Configure color schema
+            //materialSkinManager.ColorScheme = new ColorScheme(
+            //    Primary.Green400, Primary.Green500,
+            //    Primary.Green500, Accent.LightGreen200,
+            //    TextShade.WHITE);
             StreamReader red = new StreamReader("Appsetting.txt");
             chemin = red.ReadToEnd();
 
@@ -60,6 +73,21 @@ namespace Coiffure
                 cn.Close();
                 re.Close();
             }
+            StreamReader r = new StreamReader("Appsetting.txt");
+            chemin = r.ReadToEnd();
+
+            cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
+            cn.Open();
+            SqlCommand c = new SqlCommand("select * from configura" , cn);
+            SqlDataReader reader = c.ExecuteReader();
+            DataTable t = new DataTable();
+            t.Load(reader);
+            combo_langue.DisplayMember = "langue";
+            combo_langue.ValueMember = "id_lan";
+            combo_langue.DataSource = t;
+
+
+
         }
 
 
@@ -162,23 +190,41 @@ namespace Coiffure
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void combo_langue_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox1.Text)
+            switch (combo_langue.Text)
             {
                 case "Anglais":
-                    System.Threading.Thread.CurrentThread.CurrentUICulture =System.Globalization.CultureInfo.GetCultureInfo("en");
+                    System.Threading.Thread.CurrentThread.CurrentUICulture =
+              System.Globalization.CultureInfo.GetCultureInfo("en");
                     this.RightToLeft = RightToLeft.No;
                     this.RightToLeftLayout = false;
 
                     break;
-                case "Français":
-                    System.Threading.Thread.CurrentThread.CurrentUICulture =System.Globalization.CultureInfo.GetCultureInfo("fr");
+                case "Francais":
+                    System.Threading.Thread.CurrentThread.CurrentUICulture =
+    System.Globalization.CultureInfo.GetCultureInfo("fr");
                     this.RightToLeft = RightToLeft.No;
                     this.RightToLeftLayout = false;
                     break;
-          
             }
+            this.Controls.Clear();
+            InitializeComponent(); 
+        }
+
+
+        private void combo_mode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //if(combo_mode.SelectedIndex == -1)
+            if (materialSkinManager.Theme == MaterialSkinManager.Themes.DARK)
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            else
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+        }
+
+        private void txt_ville_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

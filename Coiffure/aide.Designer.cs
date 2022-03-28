@@ -57,10 +57,10 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lb_coneceter);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // lb_coneceter
@@ -72,32 +72,32 @@
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.panel3);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Name = "label3";
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel2.Controls.Add(this.btn_suppression);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // btn_suppression
             // 
-            resources.ApplyResources(this.btn_suppression, "btn_suppression");
             this.btn_suppression.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btn_suppression, "btn_suppression");
             this.btn_suppression.ForeColor = System.Drawing.Color.DimGray;
             this.btn_suppression.Name = "btn_suppression";
             this.btn_suppression.UseVisualStyleBackColor = false;
@@ -111,15 +111,15 @@
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.Controls.Add(this.btn_ajouterAvis);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // btn_ajouterAvis
             // 
-            resources.ApplyResources(this.btn_ajouterAvis, "btn_ajouterAvis");
             this.btn_ajouterAvis.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btn_ajouterAvis, "btn_ajouterAvis");
             this.btn_ajouterAvis.ForeColor = System.Drawing.Color.DimGray;
             this.btn_ajouterAvis.Name = "btn_ajouterAvis";
             this.btn_ajouterAvis.UseVisualStyleBackColor = false;
@@ -127,17 +127,17 @@
             // 
             // pnlsuppression
             // 
-            resources.ApplyResources(this.pnlsuppression, "pnlsuppression");
             this.pnlsuppression.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pnlsuppression.Controls.Add(this.btnvalider);
             this.pnlsuppression.Controls.Add(this.txtemail);
             this.pnlsuppression.Controls.Add(this.label4);
+            resources.ApplyResources(this.pnlsuppression, "pnlsuppression");
             this.pnlsuppression.Name = "pnlsuppression";
             // 
             // btnvalider
             // 
-            resources.ApplyResources(this.btnvalider, "btnvalider");
             this.btnvalider.BackColor = System.Drawing.Color.Teal;
+            resources.ApplyResources(this.btnvalider, "btnvalider");
             this.btnvalider.Name = "btnvalider";
             this.btnvalider.UseVisualStyleBackColor = false;
             this.btnvalider.Click += new System.EventHandler(this.button2_Click);
@@ -154,17 +154,17 @@
             // 
             // pnlavis
             // 
-            resources.ApplyResources(this.pnlavis, "pnlavis");
             this.pnlavis.BackColor = System.Drawing.Color.Silver;
             this.pnlavis.Controls.Add(this.btn_envoyer);
             this.pnlavis.Controls.Add(this.label1);
             this.pnlavis.Controls.Add(this.txt_avis);
+            resources.ApplyResources(this.pnlavis, "pnlavis");
             this.pnlavis.Name = "pnlavis";
             // 
             // btn_envoyer
             // 
-            resources.ApplyResources(this.btn_envoyer, "btn_envoyer");
             this.btn_envoyer.BackColor = System.Drawing.Color.Teal;
+            resources.ApplyResources(this.btn_envoyer, "btn_envoyer");
             this.btn_envoyer.Name = "btn_envoyer";
             this.btn_envoyer.UseVisualStyleBackColor = false;
             this.btn_envoyer.Click += new System.EventHandler(this.btn_envoyer_Click);
@@ -181,11 +181,12 @@
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // aide
             // 

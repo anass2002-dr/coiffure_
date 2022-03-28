@@ -72,9 +72,9 @@ namespace Coiffure
             // 
             // cb_ville
             // 
-            resources.ApplyResources(this.cb_ville, "cb_ville");
             this.cb_ville.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_ville.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_ville, "cb_ville");
             this.cb_ville.Name = "cb_ville";
             // 
             // dateTimePicker1
@@ -94,14 +94,13 @@ namespace Coiffure
             // 
             // cb_temps
             // 
-            resources.ApplyResources(this.cb_temps, "cb_temps");
             this.cb_temps.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_temps.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_temps, "cb_temps");
             this.cb_temps.Name = "cb_temps";
             // 
             // panel_header
             // 
-            resources.ApplyResources(this.panel_header, "panel_header");
             this.panel_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(154)))));
             this.panel_header.Controls.Add(this.cb_temps);
             this.panel_header.Controls.Add(this.lb_temps_header);
@@ -112,6 +111,7 @@ namespace Coiffure
             this.panel_header.Controls.Add(this.lb_salon_header);
             this.panel_header.Controls.Add(this.lb_date_header);
             this.panel_header.Controls.Add(this.lb_ville);
+            resources.ApplyResources(this.panel_header, "panel_header");
             this.panel_header.Name = "panel_header";
             this.panel_header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_header_Paint);
             // 
@@ -152,9 +152,9 @@ namespace Coiffure
             // 
             // panel_body
             // 
-            resources.ApplyResources(this.panel_body, "panel_body");
             this.panel_body.BackColor = System.Drawing.Color.White;
             this.panel_body.BackgroundImage = global::Coiffure.Properties.Resources.pexels_josh_sorenson_9953001;
+            resources.ApplyResources(this.panel_body, "panel_body");
             this.panel_body.Controls.Add(this.panel_inside);
             this.panel_body.Controls.Add(this.panel_right);
             this.panel_body.Name = "panel_body";
@@ -180,10 +180,10 @@ namespace Coiffure
             // 
             // btn_reserver
             // 
-            resources.ApplyResources(this.btn_reserver, "btn_reserver");
             this.btn_reserver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(219)))), ((int)(((byte)(252)))));
             this.btn_reserver.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_reserver.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_reserver, "btn_reserver");
             this.btn_reserver.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btn_reserver.Image = global::Coiffure.Properties.Resources.reserve_24px_2;
             this.btn_reserver.Name = "btn_reserver";
@@ -252,7 +252,6 @@ namespace Coiffure
             // 
             // panel_right
             // 
-            resources.ApplyResources(this.panel_right, "panel_right");
             this.panel_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
             this.panel_right.Controls.Add(this.txt_prix_panel_right);
             this.panel_right.Controls.Add(this.txt_nom_style_panel_right);
@@ -261,6 +260,7 @@ namespace Coiffure
             this.panel_right.Controls.Add(this.label6);
             this.panel_right.Controls.Add(this.label5);
             this.panel_right.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panel_right, "panel_right");
             this.panel_right.Name = "panel_right";
             // 
             // txt_prix_panel_right

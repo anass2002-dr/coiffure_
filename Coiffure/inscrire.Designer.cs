@@ -63,13 +63,13 @@ namespace Coiffure
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.SpringGreen;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // label5
@@ -99,15 +99,15 @@ namespace Coiffure
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319462;
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_left);
             this.panel2.Name = "panel2";
@@ -176,6 +176,7 @@ namespace Coiffure
             this.cb_ville.Items.AddRange(new object[] {
             resources.GetString("cb_ville.Items")});
             this.cb_ville.Name = "cb_ville";
+            this.cb_ville.SelectedIndexChanged += new System.EventHandler(this.cb_ville_SelectedIndexChanged);
             // 
             // lb_confirmer
             // 
@@ -251,8 +252,8 @@ namespace Coiffure
             // 
             // btn_left
             // 
-            resources.ApplyResources(this.btn_left, "btn_left");
             this.btn_left.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.btn_left, "btn_left");
             this.btn_left.Image = global::Coiffure.Properties.Resources.left_24px;
             this.btn_left.Name = "btn_left";
             this.btn_left.UseVisualStyleBackColor = false;

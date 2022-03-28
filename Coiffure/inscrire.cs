@@ -16,7 +16,7 @@ namespace Coiffure
         //string cs = @"Data Source =DESKTOP-U2EH85I\SQL ;initial catalog=salon ;user id=sa;password=123456";
         public inscrire()
         {
-            
+
             InitializeComponent();
             //[DllImport("gdi32.dll")];
             // IntPtr CreateRoundRectRgn(int x1, int y1, int x2, int y2,
@@ -50,12 +50,12 @@ namespace Coiffure
             SqlConnection cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
             cn.Open();
             SqlCommand com = new SqlCommand();
-            com = new SqlCommand("select * from  client ", cn);
+            com = new SqlCommand("select * from  client c inner join ville v on v.id_ville=c.id_ville", cn);
             SqlDataReader dr = com.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(dr);
             cb_ville.DisplayMember = "ville";
-            cb_ville.ValueMember = "id_client";
+            cb_ville.ValueMember = "id_ville";
             cb_ville.DataSource = dt;
 
         }
@@ -66,7 +66,7 @@ namespace Coiffure
             txt_password.DataBindings.Clear();
             txt_prenom.DataBindings.Clear();
             txt_nom.DataBindings.Clear();
-            
+
 
 
             txt_confirmer.Clear();
@@ -79,12 +79,12 @@ namespace Coiffure
         private void btn_left_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+
         }
 
         private void rb_client_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_inscrire_Click(object sender, EventArgs e)
@@ -92,59 +92,63 @@ namespace Coiffure
             StreamReader red = new StreamReader("Appsetting.txt");
             chemin = red.ReadToEnd();
             SqlConnection cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
- 
+
             cn.Open();
             SqlCommand com = new SqlCommand();
-       
+
+
             if (rb_client.Checked == true)
             {
-                
-                com = new SqlCommand("insert into client values ( @nom, @prenom, @email, @password,@ville )", cn);
-                if(txt_password!= txt_confirmer) { }
+
+                com = new SqlCommand("insert into client values ( @nom, @prenom, @email, @password,@id_ville )", cn);
+                if (txt_password != txt_confirmer) { }
                 com.Parameters.AddWithValue("@nom", txt_nom.Text);
                 com.Parameters.AddWithValue("@prenom", txt_prenom.Text);
                 com.Parameters.AddWithValue("@email", txt_email.Text);
                 com.Parameters.AddWithValue("@password", txt_password.Text);
-                com.Parameters.AddWithValue("@ville", cb_ville.SelectedText);
+                com.Parameters.AddWithValue("@id_ville", cb_ville.SelectedIndex);
                 com.ExecuteNonQuery();
 
             }
-             else if (rb_coiffeur.Checked == true)
-             {
+            else if (rb_coiffeur.Checked == true)
+            {
 
-                SqlCommand c = new SqlCommand("insert into coiffeur values ( @nom, @prenom, @email, @password,@ville )", cn);
+                SqlCommand c = new SqlCommand("insert into coiffeur values ( @nom, @prenom, @email, @password,@id_ville )", cn);
                 c.Parameters.AddWithValue("@nom", txt_nom.Text);
                 c.Parameters.AddWithValue("@prenom", txt_prenom.Text);
                 c.Parameters.AddWithValue("@email", txt_email.Text);
                 c.Parameters.AddWithValue("@password", txt_password.Text);
-                c.Parameters.AddWithValue("@ville", cb_ville.Text);
+                c.Parameters.AddWithValue("@id_ville", cb_ville.SelectedIndex);
                 c.ExecuteNonQuery();
 
-             }
+            }
+         
+         
             ini();
             cn.Close();
-
             Program.chenging = "conecter";
             this.Close();
-
-            //else if (rb_coiffeur.Checked == true)
-            //{
-
-            //    com = new SqlCommand("insert into coiffeur values ( @nom, @prenom, @email, @password,@ville )", cn);
-            //    com.Parameters.AddWithValue("@nom", txt_nom.Text);
-            //    com.Parameters.AddWithValue("@prenom", txt_prenom.Text);
-            //    com.Parameters.AddWithValue("@email", txt_email.Text);
-            //    com.Parameters.AddWithValue("@password", txt_password.Text);
-            //    com.Parameters.AddWithValue("@ville", cb_ville.SelectedValue);
-
-            //}
+        }
 
 
+        //else if (rb_coiffeur.Checked == true)
+        //{
 
+        //    com = new SqlCommand("insert into coiffeur values ( @nom, @prenom, @email, @password,@ville )", cn);
+        //    com.Parameters.AddWithValue("@nom", txt_nom.Text);
+        //    com.Parameters.AddWithValue("@prenom", txt_prenom.Text);
+        //    com.Parameters.AddWithValue("@email", txt_email.Text);
+        //    com.Parameters.AddWithValue("@password", txt_password.Text);
+        //    com.Parameters.AddWithValue("@ville", cb_ville.SelectedValue);
+
+        //} 
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void cb_ville_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

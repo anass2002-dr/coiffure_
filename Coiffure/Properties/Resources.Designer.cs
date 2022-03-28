@@ -353,6 +353,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap left_arrow_32px_blue1 {
+            get {
+                object obj = ResourceManager.GetObject("left_arrow_32px_blue1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left_arrow_50px {
             get {
                 object obj = ResourceManager.GetObject("left_arrow_50px", resourceCulture);

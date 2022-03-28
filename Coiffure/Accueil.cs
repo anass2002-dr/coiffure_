@@ -151,7 +151,7 @@ namespace Coiffure
             }
             if (b == btn_server)
             {
-                ShowForm(f = new Serveur(), "Server");
+                ShowForm(f = new Serveur(), "Serveur");
             }
             if (b == btn_gere)
             {

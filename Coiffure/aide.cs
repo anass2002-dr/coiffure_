@@ -30,9 +30,6 @@ namespace Coiffure
 
             cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
 
-
-           
-
         }
 
         private void btn_ajouterAvis_Click(object sender, EventArgs e)
@@ -47,23 +44,33 @@ namespace Coiffure
             chemin = red.ReadToEnd();
 
             cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
-            if (MessageBox.Show("Etes-vous sure de vouloir supprimer votre compte ? ", "suppression", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (txtemail.Text != "")
             {
+                if (MessageBox.Show("Etes-vous sure de vouloir supprimer votre compte ? ", "suppression", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    cn.Open();
+                    SqlCommand com = new SqlCommand("delete from client where email like ('" + txtemail.Text + "')",cn);
+                    com.ExecuteNonQuery();
 
-                SqlCommand com = new SqlCommand("delete from client where email like ('" + txtemail.Text + "')");
-                com.ExecuteNonQuery();
-
-                MessageBox.Show("Suppression avec succée");
-            }
-            else
-            {
-                pnlsuppression.Visible = false;
+                    MessageBox.Show("Suppression avec succée");
+                }
+                else
+                {
+                    pnlsuppression.Visible = false;
+                    MessageBox.Show("Veuillez comfirmer votre email,Merci");
+                }
             }
         }
 
         private void btn_envoyer_Click(object sender, EventArgs e)
         {
-            txt_avis.Text = "Merci d'avoir partager votre avis.";
+            txt_avis.Text = "Merci d'avoir partager votre avis .";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

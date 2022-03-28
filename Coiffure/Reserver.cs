@@ -142,7 +142,8 @@ namespace Coiffure
 
         private void btn_reserver_Click(object sender, EventArgs e)
         {
-            
+            InfosReserv f = new InfosReserv();
+            f.ShowDialog();
             //StreamReader red = new StreamReader("Appsetting.txt");
             //chemin = red.ReadToEnd();
 

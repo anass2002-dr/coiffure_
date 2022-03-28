@@ -159,68 +159,38 @@
   <data name="panel7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="comboBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="combo_langue.Font" type="System.Drawing.Font, System.Drawing">
     <value>Bookman Old Style, 11.25pt</value>
   </data>
-  <data name="comboBox2.Items" xml:space="preserve">
-    <value>Sombre</value>
-  </data>
-  <data name="comboBox2.Items1" xml:space="preserve">
-    <value>Clair</value>
-  </data>
-  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 59</value>
-  </data>
-  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 27</value>
-  </data>
-  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
-    <value>comboBox2</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bookman Old Style, 11.25pt</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
+  <data name="combo_langue.Items" xml:space="preserve">
     <value>Anglais</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
+  <data name="combo_langue.Items1" xml:space="preserve">
     <value>Francais</value>
   </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
+  <data name="combo_langue.Items2" xml:space="preserve">
     <value>arabe</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="combo_langue.Location" type="System.Drawing.Point, System.Drawing">
     <value>185, 23</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="combo_langue.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 27</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="combo_langue.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;combo_langue.Name" xml:space="preserve">
+    <value>combo_langue</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;combo_langue.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;combo_langue.Parent" xml:space="preserve">
     <value>panel7</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;combo_langue.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 89</value>
@@ -241,6 +211,36 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="combo_mode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bookman Old Style, 11.25pt</value>
+  </data>
+  <data name="combo_mode.Items" xml:space="preserve">
+    <value>Sombre</value>
+  </data>
+  <data name="combo_mode.Items1" xml:space="preserve">
+    <value>Clair</value>
+  </data>
+  <data name="combo_mode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 59</value>
+  </data>
+  <data name="combo_mode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 27</value>
+  </data>
+  <data name="combo_mode.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;combo_mode.Name" xml:space="preserve">
+    <value>combo_mode</value>
+  </data>
+  <data name="&gt;&gt;combo_mode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;combo_mode.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;combo_mode.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
@@ -878,9 +878,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>734, 429</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Configuration</value>
